@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Blackjack </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="variable.js"></script>
+        <script src="game.js"></script>
+    </head>
+    <body id="table">
+        <div class="index">
+            <a href="index.html">Game</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </div>
+        <hr>
+        <h1 style="text-align: center;">Dealer</h1>
+        <div class="cardspace" id="dcardspace"></div>
+        <h2 style="text-align: center;" class="sumspace" id="dsum"></h2>
+        <h1 style="text-align: center;">Player</h1>
+        <div class="cardspace" id="pcardspace"></div>
+        <h2 style="text-align: center;" class="sumspace" id="psum"></h2>
+        <form class="mybuttons">
+            <input id="hit" type="button" value="HIT" onclick="Playeraction.hit()" hidden>
+            <input id="stand" type="button" value="STAND" onclick="Playeraction.stand()" hidden>
+            <input id="split" type="button" value="SPLIT" onclick="Playeraction.split()" hidden>
+            <input id="doubledown" type="button" value="Double Down" onclick="Playeraction.doubledown()" hidden>
+            <input id="insurance" type="button" value="INSURANCE" onclick="Playeraction.insurance()" hidden>
+            <select class="bets" id="betmoney" required>
+                <option selected>100</option>
+                <option>200</option>
+                <option>500</option>
+                <option>1000</option>s
+                <option>5000</option>
+            </select>
+            <input class="bets" type="button" value="BET" onclick="main1()">
+        </form>
+        <h3 id="betmoneyid"></h3>
+        <h3 style="display:inline">WALLET : </h3> 
+        <h3 style="display:inline" id="walletid"></h3> 
+        <h1 style="text-align: center;" id="resultarea"></h1>
+        <script>
+            Suffledeck();
+            InitGame();
+        </script>
+    </body>
+</html>

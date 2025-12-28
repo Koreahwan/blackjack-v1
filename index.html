@@ -2,8 +2,18 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <title> Blackjack </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="game.js"></script>
     </head>
-    <body>
-        
+    <body id="table">
+        <div class="index">
+            <a href="index.html">Game</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </div>
+        <h1 style="text-align: center;">게임을 시작하려면 START를 클릭하세요</h1>
+        <div style="text-align: center;"><input style="font-size: 60pt; width:auto; height:auto;" type="button" value="START" onclick="location.href='game.html'"></div>
+        <script>sessionStorage.wallet=50000;</script>
     </body>
 </html>

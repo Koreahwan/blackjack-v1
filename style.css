@@ -1,0 +1,32 @@
+#logintitle{
+    text-align: center;
+    font-size: 30pt;
+}
+.index{
+    text-align:center;
+    font-size: 18pt;
+}
+.index a{
+    text-decoration: none;
+    color:darkblue;
+}
+#table{
+    background-image: url("static/table.jpg");
+    background-repeat : no-repeat;
+    background-size : cover;
+}
+#userpw{
+    margin-left: 0.5pt;
+}
+#submit{
+    margin-top: 8pt;
+}
+.cardspace{
+    border: black solid 3px;
+    width:auto;
+    height: 120pt;
+    text-align: center;
+}
+.mybuttons{
+    font-size: 20pt;
+}
