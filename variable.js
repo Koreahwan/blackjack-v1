@@ -1,6 +1,7 @@
 var gamedeck=[];
 var dealerhand=[];
 var playerhands=[]; // 2차원 배열
+var currentHandIndex=0;
 var betmoney=0;
 var insurancemoney=0;
 var insurancecheck=0;

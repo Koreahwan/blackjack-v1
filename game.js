@@ -70,8 +70,8 @@ function main1(){
 }
 
 const Playeraction={
-    hit(x){ // 카드 하나 더 받기
-        playerhands.push(gamedeck[0]);
+    hit(){ // 카드 하나 더 받기
+        playerhands[currentHandIndex].push(gamedeck[0]);
         gamedeck.shift();
         document.getElementById("pcardspace").innerHTML+='<img src="static/'+playerhand.slice(-1)[0]+'.png" height="100%">';
         document.getElementById('psum').innerHTML=HandSum(playerhand);
@@ -113,7 +113,7 @@ const Playeraction={
         }
     },
     split(){ // 처음에 같은 카드를 받았을 경우/ 나눠서 2개의 게임으로 진행, 단 Split에는 제한이 없음 > 구현을 위해서는 playerhand라는 1차원 배열이 아닌 playerhands라는 2차원 배열 사용 필요
-        //split 할 시, 추가 되어야 할 것들 : 새로운 pcardspace, playerhand, 
+    
     },
     doubledown(x){ // 베팅액을 2배로 올리고 카드는 하나만 더 받기
         document.getElementById('doubledown').setAttribute("hidden","");
